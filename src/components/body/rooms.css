@@ -7,7 +7,6 @@ h1 {
     color: #FCFBFA;
 }
 
-
 .container_foto {
     background-color: #5f5d5d;
     padding: 0;
@@ -15,6 +14,7 @@ h1 {
     max-width: 350px;
     margin: 5px;
 }
+
 
 .container_foto article {
     padding: 10%;
@@ -57,19 +57,121 @@ h1 {
     transition: all 4s ease;
 }
 
-
-/*hovers*/
-
 .container_foto:hover {
     cursor: pointer;
 }
 
 .container_foto:hover img {
-    opacity: 0.1;
+    opacity: 1;
     transform: scale(1.5);
 }
 
 .container_foto:hover article {
+    transform: translate(2px, -69px);
+    -webkit-transform: translate(2px, -69px);
+    -moz-transform: translate(2px, -69px);
+    -o-transform: translate(2px, -69px);
+    -ms-transform: translate(2px, -69px);
+}
+
+
+.contenedor {
+    height: 100%;
+    padding: 5% 0;
+}
+
+h1 {
+    color: #FCFBFA;
+}
+
+
+
+.contenedor {
+    height: 100%;
+    padding: 5% 0;
+}
+
+h1 {
+    color: #FCFBFA;
+}
+
+/*HHHH*/
+
+.container1{
+    display: inline-block;
+    border: 1px solid blue;
+    justify-content:center;
+}
+
+.container_foto1 {
+    background-color: #343333;
+    padding: 0;
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 300px;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+.container_foto1 article {
+    padding: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.container_foto1 h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.container_foto1 h4 {
+    margin-top: 10px;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.container_foto1 button {
+    visibility: hidden;
+}
+.container_foto1:hover button {
+    visibility: visible;
+}
+
+.container_foto1 img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.container_foto1:hover {
+    cursor: pointer;
+}
+
+.container_foto1:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.container_foto1:hover article {
     transform: translate(2px, -69px);
     -webkit-transform: translate(2px, -69px);
     -moz-transform: translate(2px, -69px);

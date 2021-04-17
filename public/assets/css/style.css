@@ -1318,6 +1318,7 @@ header:hover .owl-next {
       @media only screen and (max-width:992px){
           .header-inner{background-color: white!important;
           }
+          
           .nav-item > .nav-link{
               color: black!important}
               .logo{color: #000 !important;
@@ -1401,6 +1402,7 @@ header:hover .owl-next {
       
       .logo{color:#ffffff;
       }
+       
       
       .nav-item .nav-link{display: block;
       line-height: 36px;
@@ -1414,9 +1416,10 @@ header:hover .owl-next {
       
       .header-btn{color:#ffffff;
       border-radius: 30px;
-      background-color:gray;
+      background-color:#4290f5;
       border:none;
       font-weight: 500;
+      margin-top: 10px;
       outline: none;
       font-size: 15px;
       padding:7px 22px;
@@ -1438,14 +1441,14 @@ header:hover .owl-next {
       }
       
       .navbar-scroll .header-btn{color: #ffffff;
-      background-color: blue;
+      background-color: #4290f5;
       }
       
       .navbar-scroll .logo{color: #000;
       font-weight: 500;
+    
       }
-      
-      .first-title{
+     .navbar-scroll .first-title{
           text-transform: capitalize;
       }
       
@@ -1454,12 +1457,22 @@ header:hover .owl-next {
       }
       section:nth-of-type(even){background-color: white;
       color: white;}
+
+
+      .dropdown-item{
+        display: block;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        
+      }
+     
       
-      
-      
-      
-      
-      
+     
       
       
       

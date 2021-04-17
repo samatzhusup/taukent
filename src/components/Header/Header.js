@@ -11,7 +11,7 @@ class Header extends React.Component {
     <div className="container-fluid px-lg-5">
       <nav className="navbar navbar-expand-lg my-navbar">
         <a className="navbar-brand" href="#"><span className="logo">
-            <img width="400px" src="https://tausamaly.kz/wp-content/uploads/2021/01/%D0%9B%D0%BE%D0%B3%D0%BE122.png" className="img-fluid" style={{width: 100, margin: '-3px 0px 0px 0px'}} /></span>
+            <img  src='https://tausamaly.kz/wp-content/uploads/2021/01/%D0%9B%D0%BE%D0%B3%D0%BE122.png' className="img-fluid" style={{width: 120, margin: '-20px 0px 0px 0px'}} /></span>
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"><i className="fas fa-bars" style={{margin: '5px 0px 0px 0px'}} /></span>
@@ -24,7 +24,7 @@ class Header extends React.Component {
             <li className="nav-item">
               <a className="nav-link" href="#">Проживание</a>
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown" id="dropper">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Развлечения
               </a>
@@ -35,7 +35,7 @@ class Header extends React.Component {
                 <a className="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown" id="dropperr">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Услуги
               </a>
@@ -56,7 +56,7 @@ class Header extends React.Component {
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            <button className="header-btn my-2 my-sm-0" type="submit">Subscribe free</button>
+            <button className="header-btn my-2 " type="submit"><a style={{color:"white"}} href="/booknow">Бронировать</a></button>
           </form>
         </div>
       </nav>
