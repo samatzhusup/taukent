@@ -10,32 +10,13 @@ class Main extends React.Component {
             
 
             <div classname="App" id="page">
+
                 <div id="myCarousel1" className="carousel slide"  data-ride="carousel">
                     <ol className="carousel-indicators" id="indiSlider">
                         
                     </ol>
                     <div className="carousel-inner" id="mainSlider">
-                        {/* <div className="item active">
-                            <img src="assets/css/images/banner.png" alt="First slide"
-                                 style={{width: '100%', height: '500px'}}/>
-                            <div className="carousel-caption">
-                                <h1>Тау Самалы </h1>
-                                <h2>Всесезонный горный курорт в Казахстане</h2>
-                            </div>
-                        </div>
-                        <div className="item"><img src="assets/css/images/banner2.png"
-                                                   style={{width: '100%', height: '500px'}} alt="Second slide"/>
-                            <div className="carousel-caption">
-                            <h1>Добро пожаловать</h1>
-                                <h2>Приезжайте и почувствуйте чистый горный воздух зимы</h2>
-                            </div>
-                        </div>
-                        <div className="item"><img src="assets/css/images/banner3.png"
-                                                   style={{width: '100%', height: '500px'}} alt="Third slide"/>
-                            <div className="carousel-caption">
-                            <h1>Добро пожоловать!<br/> тау &amp; Самалы<br/></h1>
-                            </div>
-                        </div> */}
+
                     </div>
                     <a className="left carousel-control" href="#myCarousel1" data-slide="prev"> <img
                         src="assets/css/images/icons/left-arrow.png"

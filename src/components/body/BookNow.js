@@ -44,7 +44,7 @@ const BookNow = () => {
                     <input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <label>Phone</label>
                     <input placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)}/>
-                    <button type="submit" style={{background: loader ? "#ccc" : " rgb(2, 2, 110)"}}>Submit</button>
+                    <button type="подтвердить" style={{background: loader ? "#ccc" : " rgb(2, 2, 110)"}}>Submit</button>
                 </form>
             </div>
             <div className="col-md-3 contact-form"></div>
