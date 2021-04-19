@@ -123,7 +123,13 @@ class Main extends React.Component {
                 </div>
                 </div>
                 <div className="container">
-                    <EnterCard/>
+                 <h1 className="text-center "
+                style={{fontSize: '40px', paddingTop: '150px', color: "black"}}>Зима — это прекрасное время, чтобы взглянуть на природу по-новому</h1>
+                <h4 className="text-center"
+                style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Посетите зону отдыха Тау Самалы, чтобы прекрасно провести время!</h4>
+                <div id="forEnterCard">
+                            
+                </div>
                 </div>
                 <section className="vacation-offer-block">
                     <div className="vacation-offer-bgbanner">
@@ -141,52 +147,12 @@ class Main extends React.Component {
                     </div>
                 </section>
                 
-                <div className="container text-center" id="forGallery">
+                <div className="container text-center">
                 <h1 className="text-center " style={{fontSize: '60px',paddingTop:'100px',color: "black"}} >ФОТОГАЛЕРИЯ</h1>
                 <h4 className="text-center" style={{fontSize: '30px',paddingTop:'20px',paddingBottom:'35px'}}>Посмотрите фото</h4>    
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/20151210_133014%D1%8E-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/20151108_180529%D1%81-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4195-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4424-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4162-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-
-                        <img
-                        src="https://static.chocolife.me/static/upload/images/deal/for_deal_page/46000/45139/660x305/9_201812261012411545797201304.jpg?1616412559"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-                    </div>
-                    </div>
+                            <div id="forGallery">
+                                
+                                </div>
                 </div>
                 {/* <section className="blog-block-slider">
                     <div className="blog-block-slider-fix-image">
