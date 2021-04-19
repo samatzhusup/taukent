@@ -5,7 +5,7 @@ import Services from "../components/body/Services";
 import Rooms from "../components/body/Rooms";
 import Gallery from "../components/body/Gallery";
 import Dinning from "../components/body/Dinning";
-import Contact from "../components/body/Contact";
+import PriceList from "../components/body/PriceList";
 import BookNow from "../components/body/BookNow";
 
 const Router =()=>{
@@ -18,7 +18,7 @@ const Router =()=>{
                 <Route exact path="/gallery" component={Gallery}/>
                 <Route exact path="/dinning" component={Dinning}/>
                 <Route exact path="/news" component={News}/>
-                <Route exact path="/contact" component={Contact}/>
+                <Route exact path="/price" component={PriceList}/>
                 <Route exact path="/booknow" component={BookNow}/>
             </Switch>
         </BrowserRouter>

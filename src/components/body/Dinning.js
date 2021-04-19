@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import mainSlider from '../mainSlider';
-import Contact from "./Contact";
+import Contact from "./PriceList";
 
 
 class Dinning extends React.Component {

@@ -38,7 +38,7 @@ const Header = () => {
                     <div className="header-inner">
                         <div className="container-fluid px-lg-5">
                             <nav className="navbar navbar-expand-lg my-navbar">
-                                <a className="navbar-brand" href="#"><span className="logo">
+                                <a className="navbar-brand" href="/"><span className="logo">
             <img src='https://tausamaly.kz/wp-content/uploads/2021/01/%D0%9B%D0%BE%D0%B3%D0%BE122.png'
                  className="img-fluid" style={{width: 120, margin: '-20px 0px 0px 0px'}}/></span>
                                 </a>
@@ -51,7 +51,7 @@ const Header = () => {
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav m-auto">
                                         <li className="nav-item active">
-                                            <a className="nav-link" href="#">Home<span
+                                            <a className="nav-link" href="/">Главная<span
                                                 className="sr-only">(current)</span></a>
                                         </li>
                                         <li className="nav-item">
@@ -86,7 +86,7 @@ const Header = () => {
                                             </div>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Прайсы</a>
+                                            <a className="nav-link" href="/price">Прайсы</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="#">Галерея</a>
