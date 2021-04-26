@@ -50,7 +50,7 @@
                                             <li><a data-hover="Services"  href="about.html"><span>Services</span></a></li>
                                             <li><a data-hover="Rooms"  href="rooms.html"><span>Rooms</span></a></li>
                                             <li><a data-hover="Gallery"  href="gallery.html"><span>Gallery</span></a></li>
-                                            <li><a data-hover="Dinning" href="dinning.html"><span>Dinning</span></a></li>
+                                            <li><a data-hover="WinterEnter" href="dinning.html"><span>WinterEnter</span></a></li>
                                             <li><a data-hover="News" href="news.html"><span>News</span></a></li>
                                             <li><a data-hover="Contact Us" href="contact.html"><span>contact Us</span></a></li>
                                         </ul>
@@ -431,7 +431,7 @@
                                     <li><a href="about.html">Services</a></li>
                                     <li><a href="rooms.html">Rooms</a></li>
                                     <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="#">Dinning</a></li>
+                                    <li><a href="#">WinterEnter</a></li>
                                     <li> <a href="news.html">News</a></li>
                                     <li> <a href="contact.html">Contact</a></li>
                                 </ul>

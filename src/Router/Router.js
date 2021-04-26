@@ -4,7 +4,7 @@ import News from "../components/body/News";
 import Services from "../components/body/Services";
 import Rooms from "../components/body/Rooms";
 import Gallery from "../components/body/Gallery";
-import Dinning from "../components/body/Dinning";
+import WinterEnter from "../components/body/WinterEnter";
 import PriceList from "../components/body/PriceList";
 import BookNow from "../components/body/BookNow";
 
@@ -16,7 +16,7 @@ const Router =()=>{
                 <Route exact path="/services" component={Services}/>
                 <Route exact path="/rooms" component={Rooms}/>
                 <Route exact path="/gallery" component={Gallery}/>
-                <Route exact path="/dinning" component={Dinning}/>
+                <Route exact path="/winter" component={WinterEnter}/>
                 <Route exact path="/news" component={News}/>
                 <Route exact path="/price" component={PriceList}/>
                 <Route exact path="/booknow" component={BookNow}/>
