@@ -65,9 +65,8 @@ const Header = () => {
                                         </a>
                                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a className="dropdown-item" href="/winter">Зимние Развлечения</a>
-                                            <a className="dropdown-item" href="#">Летние Развлечения</a>
                                             <div className="dropdown-divider"/>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                            <a className="dropdown-item" href="/summer">Летние Развлечения</a>
                                         </div>
                                     </li>
                                     <li className="nav-item dropdown" id="dropperr">
@@ -77,19 +76,22 @@ const Header = () => {
                                             Услуги
                                         </a>
                                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a className="dropdown-item" href="#">Ресторан</a>
-                                            <a className="dropdown-item" href="#">Русская баня</a>
-                                            <a className="dropdown-item" href="#">Бассейны</a>
-                                            <a className="dropdown-item" href="#">Конференц зал</a>
+                                            <a className="dropdown-item" href="/restaurant">Ресторан</a>
                                             <div className="dropdown-divider"/>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                            <a className="dropdown-item" href="/banya">Русская баня из сруба</a>
+                                            <div className="dropdown-divider"/>
+                                            <a className="dropdown-item" href="/sayna">Финская сауна</a>
+                                            <div className="dropdown-divider"/>
+                                            <a className="dropdown-item" href="/bassein">Бассейны</a>
+                                            <div className="dropdown-divider"/>
+                                            <a className="dropdown-item" href="/сonf">Конференц зал</a>
                                         </div>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="/price">Прайсы</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Галерея</a>
+                                        <a className="nav-link" href="/gallery">Галерея</a>
                                     </li>
                                 </ul>
                                 <form className="form-inline my-2 my-lg-0">

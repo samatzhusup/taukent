@@ -1,0 +1,15 @@
+
+#page .body .title {
+    width: 900px;
+    font-weight: normal;
+}
+
+#page .body .res_photo_grid1 img {
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+#page .body .res_photo_grid1 img:hover {
+    transform: scale(1.1);
+}
+
+

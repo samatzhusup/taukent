@@ -4,8 +4,6 @@ import React, {Component} from 'react';
 const InfoCardA = (props) => {
 
     return (
-
-
         <div className="col-md-6 col-sm-12 col-xs-12 remove-padd-right">
             <div className="test1">
                 <div className="side-A">
@@ -26,7 +24,6 @@ const InfoCardA = (props) => {
             </div>
             <div className='clearfix'></div>
         </div>
-
     )
 }
 
