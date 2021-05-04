@@ -7,7 +7,7 @@ const RoomsCard  = (props) =>{
             <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
             <article className="text-left">
                 <h2>{props.title}</h2>
-                <h4>Гостинные номера, ресепшен, Люкс номер 6 человек +3 спальни, бильярд.</h4>
+                <h4>{props.text}</h4>
             </article>
             <img
                 src={props.image}

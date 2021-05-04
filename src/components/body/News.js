@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import mainSlider from '../mainSlider';
-import Dinning from "./Dinning";
+import WinterEnter from "./WinterEnter";
 
 
 class News extends React.Component {

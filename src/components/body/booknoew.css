@@ -21,9 +21,8 @@ button {
     height: 100vh;
 }
 
-/* Contact.js */
+/* PriceList.js */
 .form {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

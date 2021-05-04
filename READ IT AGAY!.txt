@@ -1,0 +1,5 @@
+download npm ! node js
+open cmd
+go to path of this file .../taukent-master
+npm i
+npm start

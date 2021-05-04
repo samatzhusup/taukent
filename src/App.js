@@ -9,11 +9,10 @@ import MainSliderInd from './components/mainSliderInd';
 import UpNews from './components/body/main/UpNews';
 import InfoCardA from './components/body/main/InfoCard';
 import InfoCardC from './components/body/main/infoCard3';
-import Three3D from './components/body/main/3Dslider';
 import RoomsCard from './components/body/main/RoomCard';
 import GoodThings from './components/body/main/GoodThings';
-import Gallery from './components/body/main/Gallery';
-import EnterCard from './components/body/main/EnterCard';
+import Ggallery  from './components/body/main/Gallery';
+import RazCard from './components/body/main/Razvlechenie';
 function App() {
     function getMapSize(x) {
         var len = 0;
@@ -85,7 +84,60 @@ function App() {
                 console.log(getMapSize(data));
             });
     }
+    function getGallery() {
+        db.collection("Things")
+            .doc('Gallery')
+            .get()
+            .then(doc => {
+                const data = doc.data();
+                // data['slider1'].image
+                var count = getMapSize(data);
 
+
+                let card = [];
+                card.push(<Ggallery image1={data['gallery0'].image1} image2={data['gallery0'].image2} />);
+
+
+                for (var i = 1; i < count; i++) {
+                    console.log('adding' + i)
+                    var name = 'gallery' + i.toString();
+                    card.push(<Ggallery image1={data[name].image1} image2={data[name].image2} />);
+
+
+                }
+                ReactDOM.render(card, document.getElementById('forGallery'));
+
+
+                console.log(getMapSize(data));
+            });
+    }
+    function getRaz() {
+        db.collection("Things")
+            .doc('EnterCard')
+            .get()
+            .then(doc => {
+                const data = doc.data();
+                // data['slider1'].image
+                var count = getMapSize(data);
+
+
+                let card = [];
+                card.push(<RazCard title={data['enter0'].title} text={data['enter0'].text} image={data['enter0'].image}/>);
+
+
+                for (var i = 1; i < count; i++) {
+                    console.log('adding' + i)
+                    var name = 'enter' + i.toString();
+                    card.push(<RazCard title={data[name].title} text={data[name].text} image={data[name].image} />);
+
+
+                }
+                ReactDOM.render(card, document.getElementById('forEnter'));
+
+
+                console.log(getMapSize(data));
+            });
+    }
 
     function infoCard() {
         db.collection("Things")
@@ -163,67 +215,6 @@ function App() {
     }
 
 
-
-    function EnterCard() {
-        db.collection("Things")
-            .doc("EnterCard")
-            .get()
-            .then(doc => {
-                const data = doc.data();
-                // data['slider1'].image
-    
-                var count = getMapSize(data);
-    
-    
-                let card = [];
-                card.push(<EnterCard image={data['enter0'].image} title={data['enter0'].title} text={data['enter0'].text}/>);
-    
-                for (var i = 1; i < count; i++) {
-                    console.log('adding' + i)
-                    var name = 'enter' + i.toString();
-                    card.push(<EnterCard image={data[name].image} title={data[name].title} text={data[name].text}/>);
-    
-    
-                }
-                ReactDOM.render(card, document.getElementById('forEnterCard'));
-    
-    
-                console.log(getMapSize(data));
-            });
-    }
-
-
-
-
-
-    function Gallery() {
-        db.collection("Things")
-            .doc("Gallery")
-            .get()
-            .then(doc => {
-                const data = doc.data();
-                // data['slider1'].image
-    
-                var count = getMapSize(data);
-    
-    
-                let card = [];
-                card.push(<Gallery image1={data['gallery0'].image1} image2={data['gallery0'].image2}/>);
-    
-                for (var i = 1; i < count; i++) {
-                    console.log('adding' + i)
-                    var name = 'gallery' + i.toString();
-                    card.push(<Gallery image1={data[name].image1} image2={data[name].image2}/>);
-    
-    
-                }
-                ReactDOM.render(card, document.getElementById('forGallery'));
-    
-    
-                
-            });
-    }
-
     function goodThings() {
         db.collection("Things")
             .doc('GoodThings')
@@ -253,26 +244,27 @@ function App() {
             });
     }
 
-    
+ 
 
 
 
     var siteUrl = 'http://localhost:3000/';
     var mobUrl = 'http://192.168.1.101:3000/'
+    // moburl = must ur local ip and port
     const windowWidth = window.innerHeight;
     const windowHeight = window.innerWidth;
-    if (window.location.href == siteUrl || window.location.href == mobUrl) {
-        EnterCard();
+    if (window.location.pathname=='/') {
+        console.log(window.location.pathname);
         getSlider();
         getNews();
         infoCard();
         // for3d();
+        getGallery();
         RoomCard();
-        
-        Gallery();
+        getRaz();
         // goodThings();
     } else {
-        console.log('other')
+        console.log(window.location.pathname);
     }
 
     return (

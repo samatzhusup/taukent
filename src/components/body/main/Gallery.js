@@ -1,12 +1,9 @@
-// import { getAllByRole } from '@testing-library/dom';
-import React, {Component} from 'react';
+import React from 'react';
 
 
-const Gallery = (props) => {
+const Ggallery = (props) => {
 
     return (
-
-
         <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
             <img
@@ -21,6 +18,6 @@ const Gallery = (props) => {
     </div>
 
     )
-};
+}
 
-export default Gallery;
+export default Ggallery;
