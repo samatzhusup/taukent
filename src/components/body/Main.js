@@ -7,13 +7,13 @@ import AdminPanel from '../adminPanel';
 class Main extends React.Component {
     render() {
         return (
-            
+
 
             <div classname="App" id="page">
 
-                <div id="myCarousel1" className="carousel slide"  data-ride="carousel">
+                <div id="myCarousel1" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators" id="indiSlider">
-                        
+
                     </ol>
                     <div className="carousel-inner" id="mainSlider">
 
@@ -29,25 +29,28 @@ class Main extends React.Component {
                 </div>
                 <div className="clearfix"/>
                 <section className="resort-overview-block">
-                
+
                     <div className="container">
-                    <h1 className="text-center " style={{fontSize: '60px',paddingTop:'20px',color: "black"}} >Наши Услуги</h1>
-                    <h4 className="text-center" style={{fontSize: '30px',paddingTop:'20px',paddingBottom:'35px'}}>Зона отдыха с активными развлечениями, проживанием и рестораном.</h4>    
+                        <h1 className="text-center " style={{fontSize: '60px', paddingTop: '20px', color: "black"}}>Наши
+                            Услуги</h1>
+                        <h4 className="text-center"
+                            style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Зона отдыха с
+                            активными развлечениями, проживанием и рестораном.</h4>
                         <div className="row" id="forInfo">
-                            
+
                         </div>
                     </div>
                 </section>
                 <section className="service-block">
                     <div className="container">
                         <div className="row" id="forGood">
-                            
+
                         </div>
                     </div>
                 </section>
                 <section className="gallery-block gallery-front">
                     <div className="container">
-                        <div className="row" >
+                        <div className="row">
                             {/* <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <div className="gallery-image">
                                     <img className="img-responsive" src="assets/css/images/room1.png"/>
@@ -96,12 +99,15 @@ class Main extends React.Component {
                     </div>
                 </section>
                 <div className="container">
-                <h1 className="text-center " style={{fontSize: '60px',paddingTop:'20px',color: "black"}} >Проживание</h1>
-                <h4 className="text-center" style={{fontSize: '30px',paddingTop:'20px',paddingBottom:'35px'}}>Зона отдыха с активными развлечениями, проживанием и рестораном.</h4>    
-                       
-                <div className="container text-center" id="forRoomPlace">
-                        
-                </div>
+                    <h1 className="text-center "
+                        style={{fontSize: '60px', paddingTop: '20px', color: "black"}}>Проживание</h1>
+                    <h4 className="text-center"
+                        style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Зона отдыха с активными
+                        развлечениями, проживанием и рестораном.</h4>
+
+                    <div className="container text-center" id="forRoomPlace">
+
+                    </div>
                 </div>
                 <div className="container">
                     <EnterCard/>
@@ -114,59 +120,64 @@ class Main extends React.Component {
                                     <div className="vacation-offer-details">
                                         <h1>ПРЯМАЯ ТРАНСЛЯЦИЯ</h1>
                                         <h4>Предлагаем вам посмотреть в живую нашу трансляцию!</h4>
-                                        <button type="button" className="btn btn-default">ТРАНСЛЯЦИЯ</button>
+                                        <form action="/live">
+                                            <button type="submit" className="btn btn-default">ТРАНСЛЯЦИЯ
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                
+
                 <div className="container text-center" id="forGallery">
-                <h1 className="text-center " style={{fontSize: '60px',paddingTop:'100px',color: "black"}} >ФОТОГАЛЕРИЯ</h1>
-                <h4 className="text-center" style={{fontSize: '30px',paddingTop:'20px',paddingBottom:'35px'}}>Посмотрите фото</h4>    
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/20151210_133014%D1%8E-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
+                    <h1 className="text-center "
+                        style={{fontSize: '60px', paddingTop: '100px', color: "black"}}>ФОТОГАЛЕРИЯ</h1>
+                    <h4 className="text-center"
+                        style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Посмотрите фото</h4>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img
+                                src="https://tausamaly.kz/wp-content/uploads/2019/12/20151210_133014%D1%8E-scaled.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt=""
+                            />
 
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/20151108_180529%D1%81-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-                    </div>
+                            <img
+                                src="https://tausamaly.kz/wp-content/uploads/2019/12/20151108_180529%D1%81-scaled.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt=""
+                            />
+                        </div>
 
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4195-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img
+                                src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4195-scaled.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt=""
+                            />
 
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4424-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-                    </div>
+                            <img
+                                src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4424-scaled.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt=""
+                            />
+                        </div>
 
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img
-                        src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4162-scaled.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img
+                                src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4162-scaled.jpg"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt=""
+                            />
 
-                        <img
-                        src="https://static.chocolife.me/static/upload/images/deal/for_deal_page/46000/45139/660x305/9_201812261012411545797201304.jpg?1616412559"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                        alt=""
-                        />
-                    </div>
+                            <img
+                                src="https://static.chocolife.me/static/upload/images/deal/for_deal_page/46000/45139/660x305/9_201812261012411545797201304.jpg?1616412559"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt=""
+                            />
+                        </div>
                     </div>
                 </div>
                 {/* <section className="blog-block-slider">
@@ -243,8 +254,10 @@ class Main extends React.Component {
                     <div className="clearfix"/>
                 </section> */}
                 <section className="blog-block">
-                <h1 className="text-center " style={{fontSize: '60px',paddingTop:'20px',color: "black"}} >Блог</h1>
-                <h4 className="text-center" style={{fontSize: '30px',paddingTop:'20px',paddingBottom:'35px'}}>Посмотрите блоги</h4>    
+                    <h1 className="text-center "
+                        style={{fontSize: '60px', paddingTop: '20px', color: "black"}}>Блог</h1>
+                    <h4 className="text-center"
+                        style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Посмотрите блоги</h4>
                     <div className="container" id='newsPlace'>
                         {/* <div className="row offspace-45">
                             <div className="view-set-block">
@@ -300,13 +313,14 @@ class Main extends React.Component {
                                 </div>
                             </div>
                         </div> */}
-                        
+
                     </div>
                 </section>
-                
 
-                <a style={{display: 'none'}} href="javascript:void(0);" className="scrollTop back-to-top" id="back-to-top">
-                    <span><i aria-hidden="true" className="fa fa-angle-up fa-lg" /></span>
+
+                <a style={{display: 'none'}} href="javascript:void(0);" className="scrollTop back-to-top"
+                   id="back-to-top">
+                    <span><i aria-hidden="true" className="fa fa-angle-up fa-lg"/></span>
                     <span>Top</span>
                 </a>
             </div>

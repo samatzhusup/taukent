@@ -13,6 +13,7 @@ import Sayna from "../components/body/services/sayna";
 import Bassein from "../components/body/services/bassein";
 import Conf from "../components/body/services/confe";
 import BookNow from "../components/body/BookNow";
+import LiveCamera from "../components/body/LiveCamera";
 
 const Router =()=>{
     return(
@@ -32,6 +33,7 @@ const Router =()=>{
                 <Route exact path="/bassein" component={Bassein}/>
                 <Route exact path="/сonf" component={Conf}/>
                 <Route exact path="/booknow" component={BookNow}/>
+                <Route exact path="/live" component={LiveCamera}/>
             </Switch>
         </BrowserRouter>
     )
