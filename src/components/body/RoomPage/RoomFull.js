@@ -3,45 +3,14 @@ import './forRoom.css';
 import ReactDOM from 'react-dom'
 import {db} from "../../firebase";
 import ImageAdd from './imageAdd';
+import ImageShow from './imageShow';
 import TextAdd from './textAdd';
 import $ from 'jquery';
-let thumbnails = document.getElementsByClassName('thumbnail')
+// import {BrowserRouter, Route, Switch} from "react-router-dom";
 
-		let activeImages = document.getElementsByClassName('active')
+// useEffect(() => console.log('mounted'), []);
 
-		for (var i=0; i < thumbnails.length; i++){
-      
-			thumbnails[i].addEventListener('mouseover', function(){
-				console.log(activeImages)
-				
-				if (activeImages.length > 0){
-					activeImages[0].classList.remove('active')
-				}
-				
-
-				this.classList.add('active')
-				document.getElementById('featured').src = this.src
-			})
-		}
-
-
-		let buttonRight = document.getElementById('slideRight');
-		let buttonLeft = document.getElementById('slideLeft');
-        $('#slideRight').click(function(){
-            document.getElementById('slider').scrollLeft += 180
-          });
-        $('#slideLeft').click(function(){
-            document.getElementById('slider').scrollLeft -= 180
-          });
-		// buttonLeft.addEventListener('click', function(){
-		// 	document.getElementById('slider').scrollLeft -= 180
-		// })
-        // if(buttonRight){
-        //     buttonRight.addEventListener('click', document.getElementById('slider').scrollLeft += 180, false);
-        // }
-		// buttonRight.addEventListener('click', function(){
-		// 	document.getElementById('slider').scrollLeft += 180
-		// })
+  
 function getMapSize(x) {
     var len = 0;
     for (var count in x) {
@@ -50,72 +19,141 @@ function getMapSize(x) {
 
     return len;
 }
-function FullRoom() {
-    db.collection("Things")
-        .doc("RoomCard")
-        .get()
-        .then(doc => {
-            const data = doc.data();
-            // data['slider1'].image
-            let card = [];
-            let card2=[];
-            var count = getMapSize(data);
-            var allImageCount = data['room0'].scrollImage;
-            var allImageC=getMapSize(allImageCount);
-            var allTextC = data['room0'].fullText;
-            var allTextCount=getMapSize(allTextC);
-            <img className="thumbnail active" src={data['room0'.image]} /> 
-            for(var i = 0 ; i < count; i++){
 
-            }
-            for(var  i =0; i<allImageC;i++){
-                
-                card.push(<ImageAdd   image={data['room0'].scrollImage[i]}  />);
+  
+// FullRoom();  
 
-            }
-            for(var  i =0; i<allTextCount;i++){
-                
-                card2.push(<TextAdd text={data['room0'].fullText[i]}/>);
 
-            }
-            // ReactDOM.render(card, document.getElementsByClassName('sliderside0')[0]);
-            // ReactDOM.render(card, document.getElementById('sliders'));
-            // ReactDOM.render(card2, document.getElementById('textSides'));
-           
-           
-            
+const RoomFull  = (props) => {
+  // console.log("Properties: ", props);
+  const { data } = props
 
-            console.log(getMapSize(data));
-        });
-}
-FullRoom();  
-
-const RoomFull  = (props) =>{
-        return(
-            <div id="content-wrapper">
-            <div className="column">
-              <img id="featured" src={props.image} />
-              <div id="slide-wrapper">
-                <img id="slideLeft" className="arrow" src="https://raw.githubusercontent.com/divanov11/image_slider_frontend/master/images/arrow-left.png" />
-                <div id="sliders" className={props.realId}>
-                  {/* <img className="thumbnail active" src={props.image} /> */}
-                    
-                </div>
-                <img id="slideRight" className="arrow" src="https://raw.githubusercontent.com/divanov11/image_slider_frontend/master/images/arrow-right.png" />
-              </div>
-            </div>
-            <div className="column" >
-              <h1 style={{color:"black"}}>{props.title}</h1>
-              <hr/>
-
-              <h3>Цена: {props.price}</h3>
-              <div id="textSides">
-
-              </div>
-             
+  
+  // return Object.keys(data).map(roomKey => {
+  //   const { image, scrollImage, fullText, title, text: roomText, price } = data[roomKey];
+  return [data].map(room => {
+      const { image, scrollImage, fullText, title, text: roomText, price } = room;
+    return(
+      <div className="card-wrapper mt-5">
+      <div className="cardRoom">
+        {/* card left */}
+        <div className="product-imgs">
+          <div className="img-display">
+            <div className="img-showcase">
+            {scrollImage && scrollImage.map(scrollImg => {
+              
+                return <ImageAdd image={scrollImg} />
+              })}
             </div>
           </div>
-          )
+          <div className="img-select">
+          {scrollImage && scrollImage.map((scrollImg,index) => {
+                index=index+1;
+                return <ImageShow id={index} image={scrollImg} />
+              })}
+          </div>
+        </div>
+        {/* card right */}
+        <div className="product-content">
+          <h2 className="product-title">{title}</h2>
+          <div className="product-price">
+            <h3 className="new-price">Цена: <span>{price}</span></h3>
+          </div>
+          <div className="product-detail">
+            <h2>Информация : </h2>
+            {fullText && fullText.map(text => {
+              
+              return (
+                <div>{text} </div>
+              )
+            })}
+
+          </div>
+        </div>
+      </div>
+    </div>
+    );
+
+  }
+  
+  )
+  
+
+  
+
+    // console.log('hello1');
+
+    // return [room0, room1, room2].map(room => {
+    //   const { image, scrollImage, fullText, title, text: roomText, price } = room;
+
+    //   return(
+    //     <div id="content-wrapper">
+    //     <div className="column">
+    //       <img id="featured" src={image} />
+    //       <div id="slide-wrapper">
+    //         <img id="slideLeft" className="arrow" src="https://raw.githubusercontent.com/divanov11/image_slider_frontend/master/images/arrow-left.png" />
+    //         <div id='sliderside2' >
+    //           {scrollImage && scrollImage.map(scrollImg => {
+    //             return <ImageAdd image={scrollImg} />
+    //           })}
+    //           {/* <img className="thumbnail active" src={props.image} /> */}
+                
+    //         </div>
+    //         <img id="slideRight" className="arrow" src="https://raw.githubusercontent.com/divanov11/image_slider_frontend/master/images/arrow-right.png" />
+    //       </div>
+    //     </div>
+    //     <div className="column" >
+    //       <h1 style={{color:"black"}}>{title}</h1>
+    //       <hr/>
+
+    //       <h3>Цена: {price}</h3>
+    //       <div id='textside2'>
+    //           {fullText.map(text => {
+    //             return (
+    //               <div>{text} </div>
+    //             )
+    //           })}
+    //       </div>
+         
+    //     </div>
+    //   </div>
+    //   )
+
+      
+    // })
+
+        // return(
+        //     <div id="content-wrapper">
+        //     <div className="column">
+        //       <img id="featured" src={image} />
+        //       <div id="slide-wrapper">
+        //         <img id="slideLeft" className="arrow" src="https://raw.githubusercontent.com/divanov11/image_slider_frontend/master/images/arrow-left.png" />
+        //         <div id='sliderside2' >
+        //           {scrollImage.map(scrollImg => {
+        //             return <ImageAdd image={scrollImg} />
+        //           })}
+        //           {/* <img className="thumbnail active" src={props.image} /> */}
+                    
+        //         </div>
+        //         <img id="slideRight" className="arrow" src="https://raw.githubusercontent.com/divanov11/image_slider_frontend/master/images/arrow-right.png" />
+        //       </div>
+        //     </div>
+        //     <div className="column" >
+        //       <h1 style={{color:"black"}}>{title}</h1>
+        //       <hr/>
+
+        //       <h3>Цена: {price}</h3>
+        //       <div id='textside2'>
+        //           {fullText.map(text => {
+        //             return (
+        //               <div>{text} </div>
+        //             )
+        //           })}
+        //       </div>
+             
+        //     </div>
+        //   </div>
+        //   )
         
     }
 

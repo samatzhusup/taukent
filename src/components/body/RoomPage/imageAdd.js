@@ -4,7 +4,7 @@ import './forRoom.css';
 
 const ImageAdd  = (props) =>{
         return(
-            <img className="thumbnail" src={props.image}></img>
+          <img className='imageRoom' src={props.image} alt="shoe image" />
           )
         
     }

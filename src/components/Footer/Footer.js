@@ -9,7 +9,7 @@ class Footer extends React.Component {
                         <div className="row">
                             <div className="col-md-3 col-sm-6 col-xs-12 width-set-50">
                                 <div className="footer-details">
-                                    <h4>Get in touch</h4>
+                                    <h4>Информация</h4>
                                     <ul className="list-unstyled footer-contact-list">
                                         <li>
                                             <i className="fa fa-map-marker fa-lg"/>
@@ -43,21 +43,19 @@ class Footer extends React.Component {
                             </div>
                             <div className="col-md-3 col-sm-6 col-xs-12 width-50 width-set-50">
                                 <div className="footer-details">
-                                    <h4>explore</h4>
+                                    <h4>Страницы</h4>
                                     <ul className="list-unstyled footer-links">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="index.html">Главный</a></li>
+                                        <li><a href="about.html">Прайсы</a></li>
                                         <li><a href="rooms.html">Rooms</a></li>
                                         <li><a href="gallery.html">Gallery</a></li>
-                                        <li><a href="#">Dinning</a></li>
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                      
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-6 col-xs-12">
                                 <div className="footer-details">
-                                    <h4>Now On Instagram</h4>
+                                    <h4>Погода</h4>
                                     <div className="row">
                                         <div className="instagram-images">
                                             <div id="instafeed"/>
@@ -68,7 +66,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="copyright">
                             2021 All right reserved. GTI <a
-                            target="_blank">Samat Mukha</a>
+                            target="_blank">GTI - Ganzy Technology Industries</a>
                         </div>
                     </div>
                 </footer>

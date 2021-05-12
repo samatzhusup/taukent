@@ -13,6 +13,7 @@ import RoomsCard from './components/body/main/RoomCard';
 import GoodThings from './components/body/main/GoodThings';
 import Ggallery  from './components/body/main/Gallery';
 import RazCard from './components/body/main/Razvlechenie';
+import $ from 'jquery';
 function App() {
     function getMapSize(x) {
         var len = 0;
@@ -198,12 +199,12 @@ function App() {
     
     
                 let card = [];
-                card.push(<RoomsCard image={data['room0'].image} title={data['room0'].title}/>);
+                card.push(<RoomsCard check={0} image={data['room0'].image} title={data['room0'].title}/>);
     
-                for (var i = 1; i < count; i++) {
+                for (var i = 1; i < 3; i++) {
                     console.log('adding' + i)
                     var name = 'room' + i.toString();
-                    card.push(<RoomsCard image={data[name].image} title={data[name].title}/>);
+                    card.push(<RoomsCard check={0} image={data[name].image} title={data[name].title}/>);
     
     
                 }
@@ -246,8 +247,15 @@ function App() {
 
  
 
+    var date= new Date();
+    var month = date.getUTCMonth() + 1;
+    if (3 <= month <= 5 || 6 <= month <= 8) {
+        $('.header-btn').css('background-color','#fcce45');
+    }
 
-
+    else {
+       
+    }
     var siteUrl = 'http://localhost:3000/';
     var mobUrl = 'http://192.168.1.101:3000/'
     // moburl = must ur local ip and port
