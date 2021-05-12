@@ -13,7 +13,11 @@ import Sayna from "../components/body/services/sayna";
 import Bassein from "../components/body/services/bassein";
 import Conf from "../components/body/services/confe";
 import BookNow from "../components/body/BookNow";
+<<<<<<< HEAD
 import RoomFull from "../components/body/RoomPage/RoomFull";
+=======
+import LiveCamera from "../components/body/LiveCamera";
+>>>>>>> ee47d5581e14cdd64fa22f3d8475de576929f6d4
 
 const Router =()=>{
     return(
@@ -33,7 +37,11 @@ const Router =()=>{
                 <Route exact path="/bassein" component={Bassein}/>
                 <Route exact path="/сonf" component={Conf}/>
                 <Route exact path="/booknow" component={BookNow}/>
+<<<<<<< HEAD
                 <Route exact path="/roomShow" component={RoomFull}/>
+=======
+                <Route exact path="/live" component={LiveCamera}/>
+>>>>>>> ee47d5581e14cdd64fa22f3d8475de576929f6d4
             </Switch>
         </BrowserRouter>
     )

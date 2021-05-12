@@ -1453,7 +1453,11 @@ body {
 .header-btn {
     color: #ffffff;
     border-radius: 30px;
+<<<<<<< HEAD
     background-color: #fcce45;
+=======
+    background-color: #4290f5;
+>>>>>>> ee47d5581e14cdd64fa22f3d8475de576929f6d4
     border: none;
     font-weight: 500;
     margin-top: 10px;

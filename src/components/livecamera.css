@@ -1,0 +1,10 @@
+
+.title {
+    color: #1b6d85;
+}
+
+.container .live_img {
+    height: 400px;
+    width: 100%;
+    background: url("");
+}
