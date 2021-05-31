@@ -3,48 +3,62 @@ import "./booknoew.css";
 import {db} from "../firebase";
 
 const BookNow = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
-    const [loader, setLoader] = useState(false);
+    function getMapSize(x) {
+        var len = 0;
+        for (var count in x) {
+            len++;
+        }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setLoader(true);
+        return len;
+    }
+    var count;
+    var lc;
 
-        db.collection("booknow")
-            .add({
-                name: name,
-                email: email,
-                phone: phone,
-            })
-            .then(() => {
-                setLoader(false);
-                alert("Your message has been submitted👍");
-            })
-            .catch((error) => {
-                alert(error.message);
-                setLoader(false);
-            });
+    function addNew(){
+        var ed= document.getElementsByTagName('getter');
+        
+        db.collection("Things")
+        .doc('EnterCard')
+        .get()
+        .then(doc => {
+        const data = doc.data();
+        // data['slider1'].image
+        count =getMapSize(data);
+        alert(count)
+        var lc = 'bron'+count;
+        db.collection("Things").doc('Bron')
+        .update({
+           [lc]:
+           {
+            name: ed[0].value,
+            email: ed[1].value,
+            phone: ed[2].value,
+        
+           } 
+        })
+        .then(() => {
+            alert("Your message has been submitted👍");
+        })
+        }
+        )
+       
+       
 
-        setName("");
-        setEmail("");
-        setPhone("");
     };
 
     return (
         <div className="container">
             <div className="col-md-3 contact-form"></div>
             <div className="col-md-6 contact-form">
-                <form className="form" onSubmit={handleSubmit}>
+                <form className="form">
                     <h1>Book Now 🤳</h1>
                     <label>Name</label>
-                    <input placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}/>
+                    <input placeholder="Name"  name="getter"/>
                     <label>Email</label>
-                    <input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input placeholder="Email"  name="getter"/>
                     <label>Phone</label>
-                    <input placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)}/>
-                    <button type="подтвердить" style={{background: loader ? "#ccc" : " rgb(2, 2, 110)"}}>Submit</button>
+                    <input placeholder="Phone"  name="getter"/>
+                    <button type="подтвердить" onClick={addNew}>Submit</button>
                 </form>
             </div>
             <div className="col-md-3 contact-form"></div>

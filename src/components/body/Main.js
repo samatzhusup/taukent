@@ -11,11 +11,11 @@ class Main extends React.Component {
 
             <div classname="App" id="page">
 
-<<<<<<< HEAD
+
                 <div id="myCarousel1" className="carousel slide"  data-ride="carousel">
-=======
+
                 <div id="myCarousel1" className="carousel slide" data-ride="carousel">
->>>>>>> ee47d5581e14cdd64fa22f3d8475de576929f6d4
+
                     <ol className="carousel-indicators" id="indiSlider">
 
                     </ol>
@@ -140,128 +140,26 @@ class Main extends React.Component {
                     </div>
                 </section>
 
-                <div className="container text-center" id="forGallery">
-<<<<<<< HEAD
-                <h1 className="text-center " style={{fontSize: '60px',paddingTop:'100px',color: "black"}} >ФОТОГАЛЕРИЯ</h1>
-                <h4 className="text-center" style={{fontSize: '30px',paddingTop:'20px',paddingBottom:'35px'}}>Посмотрите фото</h4>    
-                
-=======
-                    <h1 className="text-center "
-                        style={{fontSize: '60px', paddingTop: '100px', color: "black"}}>ФОТОГАЛЕРИЯ</h1>
+                <div className="container mt-5">
+                    <h1 className="text-center"
+                        style={{fontSize: '60px', paddingTop: '20px', color: "black"}}>Фотогалерея</h1>
                     <h4 className="text-center"
-                        style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Посмотрите фото</h4>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <img
-                                src="https://tausamaly.kz/wp-content/uploads/2019/12/20151210_133014%D1%8E-scaled.jpg"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt=""
-                            />
+                        style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Вы можете увидеть это у нас!</h4>
 
-                            <img
-                                src="https://tausamaly.kz/wp-content/uploads/2019/12/20151108_180529%D1%81-scaled.jpg"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt=""
-                            />
-                        </div>
-
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <img
-                                src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4195-scaled.jpg"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt=""
-                            />
-
-                            <img
-                                src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4424-scaled.jpg"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt=""
-                            />
-                        </div>
-
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <img
-                                src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4162-scaled.jpg"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt=""
-                            />
-
-                            <img
-                                src="https://static.chocolife.me/static/upload/images/deal/for_deal_page/46000/45139/660x305/9_201812261012411545797201304.jpg?1616412559"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt=""
-                            />
-                        </div>
+                    <div className="container text-center" id="forGallery">
+                            
                     </div>
->>>>>>> ee47d5581e14cdd64fa22f3d8475de576929f6d4
                 </div>
-             
                 <section className="blog-block">
                     <h1 className="text-center "
                         style={{fontSize: '60px', paddingTop: '20px', color: "black"}}>Блог</h1>
                     <h4 className="text-center"
                         style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Посмотрите блоги</h4>
                     <div className="container" id='newsPlace'>
-<<<<<<< HEAD
-                     
-                        
-=======
-                        {/* <div className="row offspace-45">
-                            <div className="view-set-block">
-                                <div className="col-md-6 col-sm-6 col-xs-12">
-                                    <div className="event-blog-image">
-                                        <img alt="image" className="img-responsive" src="assets/css/images/blog1.png"/>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-sm-6 col-xs-12 side-in-image">
-                                    <div className="event-blog-details">
-                                        <h4><a href="single-blog.html">Lorem ipsum dolor sit amet</a></h4>
-                                        <h5>Post By Admin <a><i aria-hidden="true" className="fa fa-heart-o fa-lg"/>Likes</a><a><i
-                                            aria-hidden="true" className="fa fa-comment-o fa-lg"/>comments</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla,
-                                            ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non
-                                            faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut
-                                            ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet
-                                            lectus. </p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla,
-                                            ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non
-                                            faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris
-                                            nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc
-                                            facilisis, dapibus libero ac</p>
-                                        <a className="btn btn-default" href="single-blog.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row offspace-45">
-                            <div className="view-set-block">
-                                <div className="col-md-6 col-sm-6 col-xs-12">
-                                    <div className="event-blog-image">
-                                        <img alt="image" className="img-responsive" src="assets/css/images/blog2.png"/>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-sm-6 col-xs-12 side-in-image">
-                                    <div className="event-blog-details">
-                                        <h4><a href="single-blog.html">Lorem ipsum dolor sit amet</a></h4>
-                                        <h5>Post By Admin <a><i aria-hidden="true" className="fa fa-heart-o fa-lg"/>Likes</a><a><i
-                                            aria-hidden="true" className="fa fa-comment-o fa-lg"/>comments</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla,
-                                            ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non
-                                            faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut
-                                            ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet
-                                            lectus. </p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla,
-                                            ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non
-                                            faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris
-                                            nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc
-                                            facilisis, dapibus libero ac</p>
-                                        <a className="btn btn-default" href="single-blog.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
 
->>>>>>> ee47d5581e14cdd64fa22f3d8475de576929f6d4
+                      
+
+
                     </div>
                 </section>
 
@@ -272,8 +170,10 @@ class Main extends React.Component {
                     <span>Top</span>
                 </a>
             </div>
+            </div>
         )
     }
 }
+
 
 export default Main;

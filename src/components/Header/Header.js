@@ -10,7 +10,7 @@ const Header = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setLoader(true);
+        setLoader(true);    
 
         db.collection("booknow")
             .add({
@@ -55,11 +55,10 @@ const Header = () => {
                                             className="sr-only">(current)</span></a>
                                     </li>
                                     <li className="nav-item">
-<<<<<<< HEAD
+
                                         <a className="nav-link" href="rooms">Проживание</a>
-=======
-                                        <a className="nav-link" href="#">Проживание</a>
->>>>>>> ee47d5581e14cdd64fa22f3d8475de576929f6d4
+
+                                        
                                     </li>
                                     <li className="nav-item dropdown" id="dropper">
                                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown"

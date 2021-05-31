@@ -12,7 +12,7 @@ const InfoCardC = (props) => {
                     <div class="product-desc-side">
                         <h3><a>{props.title}</a></h3>
                         <p>{props.text}</p>
-                        <div class="links"><a href="single-blog.html">Читать</a></div>
+                        <div class="links"><a href={props.href}>Смотреть</a></div>
                     </div>
                 </div>
 

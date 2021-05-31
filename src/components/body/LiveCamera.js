@@ -6,15 +6,15 @@ class LiveCamera extends React.Component {
         return (
             <div id="page">
                 <section className="image-head-wrapper"
-                         style={{backgroundImage: 'url("https://get.wallhere.com/photo/Canada-mountain-Alberta-Banff-National-Park-snow-winter-997414.jpg")'}}>
+                         style={{backgroundImage: 'url("https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4363-scaled.jpg")'}}>
                     <div className="inner-wrapper">
-                        <h1>Камера</h1>
+                        <h1 className="ml-5">Камера</h1>
                     </div>
                 </section>
                 <h1 className="title justify-content-center text-center text-black">НИЖНЯЯ ТРАССА</h1>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center">
+                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
                             <div className="justify-content-center">
                                 <iframe
                                     src="https://open.ivideon.com/embed/v2/?server=100-wxUPF7g32DkSw2xqp9OO5q&camera=131072&width=&height=&lang=ru"
@@ -27,7 +27,7 @@ class LiveCamera extends React.Component {
                 <h1 className="title justify-content-center text-center text-black">БУГЕЛЬНАЯ КАНАТКА</h1>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center">
+                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
                             <div className="justify-content-center">
                                 <iframe
                                     src="https://open.ivideon.com/embed/v2/?server=100-wxUPF7g32DkSw2xqp9OO5q&camera=65536&width=&height=&lang=ru"

@@ -13,6 +13,7 @@ import RoomsCard from './components/body/main/RoomCard';
 import GoodThings from './components/body/main/GoodThings';
 import Ggallery  from './components/body/main/Gallery';
 import RazCard from './components/body/main/Razvlechenie';
+import PriceList from './components/body/PriceList';
 import $ from 'jquery';
 function App() {
     function getMapSize(x) {
@@ -152,7 +153,7 @@ function App() {
 
                 let card = [];
                 card.push(<InfoCardA image={data['info0'].image} title={data['info0'].title}
-                                     text={data['info0'].text}/>);
+                                     text={data['info0'].text} href={data['info0'].href}/>);
 
 
                 for (var i = 1; i < count; i++) {
@@ -162,17 +163,17 @@ function App() {
                     if(window.innerWidth<800){
                        
                         card.push(<InfoCardA image={data[name].image} title={data[name].title}
-                            text={data[name].text}/>);
+                            text={data[name].text} href={data[name].href} />);
                     }
                     else{
                         
                         if (i % 2 == 1 && i != 3 || i % 2 == 0 && i / 2 == sum) {
                             card.push(<InfoCardA image={data[name].image} title={data[name].title}
-                                                 text={data[name].text}/>);
+                                                 text={data[name].text} href={data[name].href} />);
     
                         } else if (i % 2 == 0 || i > 2 && i % 2 == 1) {
                             card.push(<InfoCardC image={data[name].image} title={data[name].title}
-                                                 text={data[name].text}/>);
+                                                 text={data[name].text} href={data[name].href} />);
     
                         }
                     }
@@ -244,7 +245,7 @@ function App() {
                 console.log(getMapSize(data));
             });
     }
-
+   
  
 
     var date= new Date();
