@@ -156,10 +156,6 @@ class Main extends React.Component {
                     <h4 className="text-center"
                         style={{fontSize: '30px', paddingTop: '20px', paddingBottom: '35px'}}>Посмотрите блоги</h4>
                     <div className="container" id='newsPlace'>
-
-                      
-
-
                     </div>
                 </section>
 
@@ -167,7 +163,7 @@ class Main extends React.Component {
                 <a style={{display: 'none'}} href="javascript:void(0);" className="scrollTop back-to-top"
                    id="back-to-top">
                     <span><i aria-hidden="true" className="fa fa-angle-up fa-lg"/></span>
-                    <span>Top</span>
+                    <span>верх</span>
                 </a>
             </div>
             </div>

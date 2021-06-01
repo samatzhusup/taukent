@@ -403,7 +403,7 @@ ul {
 }
 
 .vacation-offer-details .btn.btn-default {
-    background: #4290f5 none repeat scroll 0 0;
+    background: #ffdb00 none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
     color: #fff;
@@ -439,8 +439,8 @@ ul {
 }
 
 .links > a:hover, .event-blog-details a.btn-default:hover {
-    background: #4290f5;
-    border-color: #4290f5;
+    background: #ffdb00;
+    border-color: #ffdb00;
     color: #fff;
 }
 
@@ -545,6 +545,29 @@ footer a {
     width: 28px;
 }
 
+.footer-social-icon-header {
+    margin-top: 0px;
+}
+
+.footer-social-icon-header > a {
+    border: 1px solid;
+    display: inline-block;
+    font-size: 16px;
+    height: 28px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 28px;
+}
+
+.footer-social-icon-header > a i {
+    line-height: 26px;
+}
+
+.footer-social-icon-header > a + a {
+    margin-left: 10px;
+}
+
 .footer-social-icon > a i {
     line-height: 26px;
 }
@@ -585,21 +608,6 @@ footer a {
     color: #fff;
     padding: 45px 110px;
     border-radius: 15px 15px 0 0;
-}
-
-.blog-box p::before {
-    content: url("../images/icons/left-quotes-sign.png");
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-
-.blog-box p::after {
-    content: url("../images/icons/left-quotes-sign.png");
-    right: 0;
-    position: absolute;
-    bottom: 0;
-    transform: scaleX(-1);
 }
 
 .blog-box > p {
@@ -679,8 +687,8 @@ footer a {
 }
 
 #myCarousel1 .carousel-indicators .active {
-    background: #4290f5;
-    border-color: #4290f5;
+    background: #ffdb00;
+    border-color: #ffdb00;
 }
 
 /*back to top*/
@@ -741,7 +749,7 @@ footer a {
 
 /*rooms page*/
 .bg-set-col {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(189, 184, 184, 0.25);
     padding: 50px 0;
 }
 
@@ -991,15 +999,9 @@ footer a {
     transform: translate(-50%, -50%);
 }
 
-.inner-wrapper {
+.inner-wrapper h1{
     color: #fff;
-    left: 60%;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: 50%;
-    transform: translate(-70%, -70%);
-    width: 60%;
+    margin-top: 140px;
 }
 
 .inner-wrapper h1 {
@@ -1268,7 +1270,7 @@ header:hover .owl-next {
 }
 
 .product-desc-side h3::before {
-    background: #4290f5;
+    background: #ffdb00;
     bottom: -1px;
     content: "";
     height: 2px;
@@ -1339,7 +1341,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .nav-item > .nav-link {
-        padding: 5px 20px !important;
+        padding: 2px 20px !important;
         display: block !important;
     }
 }
@@ -1366,7 +1368,6 @@ body {
 
 .content-banner {
     color: #ffffff;
-    background-image: url(./img/banner.png);
     min-height: 400px;
     height: 100%;
     position: relative;
@@ -1464,12 +1465,8 @@ body {
 
 .header-btn {
     color: #ffffff;
-    border-radius: 30px;
-
-    background-color: #fcce45;
-
-    background-color: #4290f5;
-
+    border-radius: 20px;
+    background-color: #ffdb00;
     border: none;
     font-weight: 500;
     margin-top: 10px;
@@ -1480,7 +1477,6 @@ body {
 }
 
 .header-btn:hover {
-    background-color: white;
     cursor: pointer;
 }
 
@@ -1500,7 +1496,7 @@ body {
 
 .navbar-scroll .header-btn {
     color: #ffffff;
-    background-color: #4290f5;
+    background-color: #ffdb00;
 }
 
 .navbar-scroll .logo {
@@ -1589,108 +1585,3 @@ section:nth-of-type(even) {
     /*background-color: #2b2b2b;*/
     /*height: 350px;*/
 }
-
-
-
-     
-      
-     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      

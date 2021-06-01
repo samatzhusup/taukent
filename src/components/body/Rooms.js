@@ -98,7 +98,7 @@ class Rooms extends React.Component {
                                             <img alt="image" className="img-responsive"
                                                  src="assets/css/images/icons/wifi.png"/>
                                         </div>
-                                        <h4><a>free wifi</a></h4>
+                                        <h4><a>Бесплатный wifi</a></h4>
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-sm-3 col-xs-6 width-50">
@@ -107,7 +107,7 @@ class Rooms extends React.Component {
                                             <img alt="image" className="img-responsive"
                                                  src="assets/css/images/icons/key.png"/>
                                         </div>
-                                        <h4><a>room service</a></h4>
+                                        <h4><a>Обслуживание номеров</a></h4>
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-sm-3 col-xs-6 mt-25">
@@ -116,7 +116,7 @@ class Rooms extends React.Component {
                                             <img alt="image" className="img-responsive"
                                                  src="assets/css/images/icons/car.png"/>
                                         </div>
-                                        <h4><a>free parking</a></h4>
+                                        <h4><a>Бесплатная парковка</a></h4>
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-sm-3 col-xs-6 mt-25">
@@ -125,7 +125,7 @@ class Rooms extends React.Component {
                                             <img alt="image" className="img-responsive"
                                                  src="assets/css/images/icons/user.png"/>
                                         </div>
-                                        <h4><a>customer support</a></h4>
+                                        <h4><a>Служба поддержки</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ class Rooms extends React.Component {
                 <a style={{display: 'none'}} href="javascript:void(0);" className="scrollTop back-to-top"
                    id="back-to-top">
                     <span><i aria-hidden="true" className="fa fa-angle-up fa-lg"/></span>
-                    <span>Top</span>
+                    <span>верх</span>
                 </a>
             </div>
     )

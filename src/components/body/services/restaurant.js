@@ -170,7 +170,7 @@ class Restaurant extends React.Component {
                 <a style={{display: 'none'}} href="javascript:void(0);" className="scrollTop back-to-top"
                    id="back-to-top">
                     <span><i aria-hidden="true" className="fa fa-angle-up fa-lg"/></span>
-                    <span>Top</span>
+                    <span>верх</span>
                 </a>
             </div>)
 

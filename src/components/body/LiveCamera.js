@@ -5,12 +5,10 @@ class LiveCamera extends React.Component {
     render() {
         return (
             <div id="page">
-                <section className="image-head-wrapper"
-                         style={{backgroundImage: 'url("https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4363-scaled.jpg")'}}>
-                    <div className="inner-wrapper">
-                        <h1 className="ml-5">Камера</h1>
-                    </div>
-                </section>
+                <div className="image-head-wrapper" >
+                    <img src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4363-scaled.jpg"/>
+                    <h1>ПРЯМАЯ ТРАНСЛЯЦИЯ</h1>
+                </div>
                 <h1 className="title justify-content-center text-center text-black">НИЖНЯЯ ТРАССА</h1>
                 <div className="container">
                     <div className="row justify-content-center">
