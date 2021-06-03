@@ -14,7 +14,7 @@ $(document).ready(function () {
             $('#back-to-top').fadeOut();
         }
     });
-    
+
     $("#dropper").hover(function() {
         $(this).addClass("open");
     }, function() {
@@ -35,34 +35,31 @@ $(document).ready(function () {
     $(function(){
         var navbar = $('.header-inner');
         if(window.innerWidth>800){
-        $(window).scroll(function(){
-          if($(window).scrollTop() <=40 ){
-            navbar.removeClass('navbar-scroll');
-            $(".img-fluid").attr("src","https://tausamaly.kz/wp-content/uploads/2021/01/%D0%9B%D0%BE%D0%B3%D0%BE122.png");
-          
-          }else if(!window.innerWidth<800){
-            navbar.addClass('navbar-scroll');
-            
-            $(".img-fluid").attr("src","https://i.ibb.co/zxQ7dtB/image.png");
-          }
-        });
+            $(window).scroll(function(){
+                if($(window).scrollTop() <=40 ){
+                    navbar.removeClass('navbar-scroll');
+                    $(".img-fluid").attr("src","https://tausamaly.kz/wp-content/uploads/2021/01/%D0%9B%D0%BE%D0%B3%D0%BE122.png");
+
+                }else if(!window.innerWidth<800){
+                    navbar.addClass('navbar-scroll');
+
+                    $(".img-fluid").attr("src","https://i.ibb.co/zxQ7dtB/image.png");
+                }
+            });
         }
         else{
             $(window).scroll(function(){
                 if($(window).scrollTop() <=40 ){
-                  navbar.removeClass('navbar-scroll');
-                  
+                    navbar.removeClass('navbar-scroll');
+
                 }else if(!window.innerWidth<800){
-                  navbar.addClass('navbar-scroll');
-                  
-                  
+                    navbar.addClass('navbar-scroll');
+
+
                 }
-              });
+            });
         }
-      });
-     
+    });
+
 
 });
-
-
-

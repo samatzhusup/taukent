@@ -87,12 +87,10 @@ const Rooms = () => {
 
     return (
         <div id="page">
-            <section className="image-head-wrapper"
-                     style={{backgroundImage: 'url("https://thumb.tildacdn.com/tild3435-3061-4638-b562-633330613263/-/format/webp/DSC_4176.jpg")'}}>
-                <div className="inner-wrapper">
-                    <h1>Rooms</h1>
-                </div>
-            </section>
+            <div className="image-head-wrapper">
+                <img src="https://tausamaly.kz/wp-content/uploads/2019/12/IMG_4165-scaled.jpg"/>
+                <h1>Проживание</h1>
+            </div>
             <div className="clearfix"/>
             {/*gallery block-*/}
             <div className="container-fluid contenedor text-center">

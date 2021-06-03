@@ -104,7 +104,6 @@ class Confe extends React.Component {
             }
             var cardImage=[];
             var card=[];
-            alert(len)
             if(len!=0){
              for(var i = 0;i<len;i++){
                

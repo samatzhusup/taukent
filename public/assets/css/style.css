@@ -144,20 +144,37 @@ ul {
     position: absolute;
     right: auto;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     z-index: 0;
 }
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    #myCarousel1 .carousel-caption h1 {
+        color: #fff;
+        font-size: 85px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+}
 
-#myCarousel1 .carousel-caption h1 {
-    color: #fff;
-    font-family: "exotc350_dmbd_btdemi-bold";
-    font-size: 85px;
-    letter-spacing: 2px;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    #myCarousel1 .carousel-caption h1 {
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
 
-    text-transform: capitalize;
+    #myCarousel1 .carousel-caption h2 {
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
 }
 
 /*common*/
@@ -566,6 +583,11 @@ footer a {
 
 .footer-social-icon-header > a + a {
     margin-left: 10px;
+}
+
+.footer-social-icon-header .phone {
+    margin-left: 5px;
+    color: #ffffff;
 }
 
 .footer-social-icon > a i {
@@ -992,11 +1014,28 @@ footer a {
     width: 100%;
     object-fit: cover;
 }
-.image-head-wrapper h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+@media screen and (min-width: 601px) {
+
+    .image-head-wrapper h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 56px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-head-wrapper h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 34px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+        transform: translate(-50%, -50%);
+    }
 }
 
 .inner-wrapper h1{
@@ -1487,10 +1526,19 @@ body {
     top: 0;
     z-index: 99;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
-    transition-duration: 0.6s;
+    transition-duration: 0.1s;
 }
 
 .navbar-scroll .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-scroll .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-scroll .footer-social-icon-header .phone {
+    margin-left: 5px;
     color: black;
 }
 
