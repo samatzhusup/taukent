@@ -1627,9 +1627,8 @@ section:nth-of-type(even) {
     /*width: 650px;*/
     /*margin-right: 600px;*/
 }
-
-.coc{
-    /*padding-top: 50px;*/
-    /*background-color: #2b2b2b;*/
-    /*height: 350px;*/
+.img-showcase img{
+    min-width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
