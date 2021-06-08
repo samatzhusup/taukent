@@ -20,8 +20,14 @@ class Footer extends React.Component {
                                             <p><a href="tel:+7 747 541 98 77">+7 747 541 98 77</a></p>
                                         </li>
                                         <li>
-                                            <i className="fa fa-envelope-o fa-lg"/>
-                                            <p><a href="mailto:muxammederaliev@gmail.com">muxammederaliev@gmail.com</a>
+                                            <i className="fa fa-user fa-lg"/>
+                                            <p><a href="mailto:adilkhan@gmail.com">Adilkhan Sarsenbay</a>
+                                            </p>
+                                            <i className="fa fa-user fa-lg"/>
+                                            <p><a href="mailto:muxammederaliev@gmail.com">Muhammad Eraliev</a>
+                                            </p>
+                                            <i className="fa fa-user fa-lg"/>
+                                            <p><a href="mailto:samat.zhusupov.2018@gmail.com">Samat Zhussipov</a>
                                             </p>
                                         </li>
                                     </ul>
